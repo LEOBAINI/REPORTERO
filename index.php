@@ -9,7 +9,7 @@
 <body>
 <div class="contenedor">
 	<div class="menu">
-		<h2 >*REPORTERO* SISTEMA DE REPORTES DE MASTERMIND </h2>
+		<h2 >*REPORTERO1* SISTEMA DE REPORTES DE MASTERMIND </h2>
 	</div>
 	<div class="consultasrecientes">
 		<h3>Listado de consultas recientes</h3>
