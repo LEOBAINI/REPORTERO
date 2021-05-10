@@ -21,10 +21,33 @@ function verify_run_app($name){
     return (strpos($content, 'no hay tareas') === false);
 }
  
+
+
+
+
+
+ini_set("display_errors",0);
+$ip_host = "127.0.0.1";
+$puerto = 9090;
+ 
+$fp = fsockopen($ip_host,$puerto,$errno,$errstr,10);
+if(!$fp){
+echo "APLICACION DE REPORTES AGUARDANDO A SER EJECUTADA";
+}else{
+echo "APLICACION EJECUTANDO REPORTES AGUARDE...";
+fclose($fp);
+}
+
+ 
+
+
+
+/*
+
 $esta_corriendo = verify_run_app("SQLCMD.exe");
 if($esta_corriendo){       
     echo "LA APLICACION (SQLCMD) CORRIENDO";
 } else {
     echo "LA APLICACION (SQLCMD) NO ESTA CORRIENDO";
-}
+}*/
  ?>
