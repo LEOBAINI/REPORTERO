@@ -38,6 +38,8 @@ echo "APLICACION EJECUTANDO REPORTES AGUARDE...";
 fclose($fp);
 }
 
+
+
  
 
 

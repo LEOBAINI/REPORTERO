@@ -35,4 +35,25 @@ function obtener_estructura_directorios($ruta){
         echo "No es una ruta de directorio valida<br/>";
     }
 }
+function vaciarDescargas(){
+
+$files = glob('Descargas/*'); //obtenemos todos los nombres de los ficheros
+foreach($files as $file){
+    if(is_file($file))
+    $flag=unlink($file); //elimino el fichero
+
+}
+If ($flag) {
+  echo '<script language="javascript">
+    alert("La carpeta se vació correctamente");
+    window.location.href="index.php"</script>';
+} else {
+  echo '<script language="javascript">
+    alert("No se pudo borrar");
+    window.location.href="index.php"</script>';
+}
+
+
+
+}
  ?>
