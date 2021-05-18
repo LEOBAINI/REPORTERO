@@ -63,6 +63,9 @@ function encolarReporte(
   $basedata,
   $ip
   ){
+  $fecha = new DateTime();
+  
+  $nombre=$nombre.'_'.$fecha->getTimestamp();
   $query='insert into colareportes(nombre,
   descripcionreporte,
   rutaAlQuery,

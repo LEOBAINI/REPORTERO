@@ -48,17 +48,11 @@ include "funcionesEspeciales.php";
 	<input type="hidden" name="ficheroplantilla" value=".\QUERY_INPUTS\v_manto6.txt" />
     <input type="hidden" name="ficheroAejecutar" value=".\QUERY_INPUTS\v_manto6_formateado.txt" />	
     <?php
-    echo '<input type="hidden" name="nombre" value="F_TECNICAS'.$_SESSION['pais'].'"/>' 	
+    echo '<input type="hidden" name="nombre" value="F_TECNICAS_'.$_SESSION['pais'].'"/>' 	
     ?>
     <input type="hidden" name="descripcionreporte" value="CANTIDAD_FALLAS_TECNICAS" />	
     <input type="hidden" name="rutaAlQuery" value=".\\QUERY_INPUTS\\v_manto6_formateado.txt" />	
-    <!--<input type="hidden" name="rutaSalida" value=".\\Descargas" />	
-
-    <input type="hidden" name="usuarioSql" value="sa" />	
-    <input type="hidden" name="passwordSql" value="QcTb2013.." />	
-    <input type="hidden" name="basedata" value="monitordb" />	
-    <input type="hidden" name="ip" value="10.57.0.18" />	-->
-
+   
     <!--Parametros de encolado en MySql local-->
 
 

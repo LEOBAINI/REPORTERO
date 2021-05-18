@@ -38,8 +38,8 @@ function obtener_estructura_directorios($ruta){
     }
 }
 function vaciarDescargas(){
-
-$files = glob('Descargas/*'); //obtenemos todos los nombres de los ficheros
+session_start();
+$files = glob('Descargas/'.$_SESSION['pais'].'/*'); //obtenemos todos los nombres de los ficheros
 foreach($files as $file){
     if(is_file($file))
     $flag=unlink($file); //elimino el fichero
@@ -123,7 +123,7 @@ function mostrarPais($ip_server){
        strcmp($ip_server, $pe02) == 0 or
        strcmp($ip_server, $pe03) == 0
      ){
-       setearVariableSessionPais('PERÚ');
+       setearVariableSessionPais('PERU');
     }
     if(strcmp($ip_server, $uy01) == 0 or
        strcmp($ip_server, $uy02) == 0 ){
