@@ -35,9 +35,10 @@ if(!$fp){
 echo "APLICACION DE REPORTES AGUARDANDO A SER EJECUTADA";
 }else{
 echo "APLICACION EJECUTANDO REPORTES AGUARDE...";
+
 fclose($fp);
 }
-
+echo "<h6><a href='./colareportes.php'>LINK  a La Cola de Reportes</a></h6>";
 
 
  
