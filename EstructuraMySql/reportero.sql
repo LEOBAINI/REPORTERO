@@ -49,28 +49,6 @@ CREATE TABLE `colareportes` (
 -- Dumping data for table `colareportes`
 --
 
-INSERT INTO `colareportes` (`idcolaReportes`, `nombre`, `descripcionreporte`, `RutaAlQuery`, `rutasalida`, `usuarioSql`, `passwordSql`, `basedata`, `ip`, `windowsProcessId`, `EstaEnEjecucion`, `fechaencolado`, `fechafinalizado`, `FechaHoraEjecucion`) VALUES
-(3, 'DETALLE', 'manto6_descr', '.\\\\QUERY_INPUTS\\\\v_manto6_formateado.txt', '.\\\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, NULL, '2021-05-14 15:23:03', NULL),
-(7, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 15:32:55', '2021-05-14 15:33:02', NULL),
-(8, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 15:37:15', '2021-05-14 15:37:22', NULL),
-(9, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 15:37:21', '2021-05-14 15:37:46', NULL),
-(10, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 15:37:39', '2021-05-14 15:37:48', NULL),
-(11, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 15:42:28', '2021-05-14 15:42:36', NULL),
-(12, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 16:00:16', '2021-05-14 16:00:24', NULL),
-(13, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 16:01:20', '2021-05-14 16:01:28', NULL),
-(14, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 16:01:51', '2021-05-14 16:01:59', NULL),
-(15, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 16:05:37', '2021-05-14 16:05:44', NULL),
-(16, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-14 16:06:11', '2021-05-14 16:06:18', NULL),
-(17, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 11:15:32', '2021-05-17 11:15:43', NULL),
-(18, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 11:17:42', '2021-05-17 11:20:39', NULL),
-(19, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 11:23:31', '2021-05-17 11:23:39', NULL),
-(20, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 11:29:42', '2021-05-17 11:29:51', NULL),
-(21, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 11:31:31', '2021-05-17 11:31:39', NULL),
-(22, 'F_TECNICAS', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 12:06:53', '2021-05-17 12:07:03', NULL),
-(23, 'F_TECNICAS_DETALLE', 'DETALLE_DE_CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt', '.\\Descargas', 'sa', 'QcTb2013..', 'monitordb', '10.57.0.18', '0', NULL, '2021-05-17 12:11:41', '2021-05-17 12:11:49', NULL),
-(24, 'F_TECNICASARGENTINA', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.DescargasARGENTINA', 'sa', 'anaconda1', 'monitordb', '10.54.118.60', '0', NULL, '2021-05-18 12:44:06', '2021-05-18 12:44:13', NULL),
-(25, 'F_TECNICASARGENTINA', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', './Descargas/ARGENTINA', 'sa', 'anaconda1', 'monitordb', '10.54.118.60', '0', NULL, '2021-05-18 12:46:53', '2021-05-18 12:46:59', NULL),
-(26, 'F_TECNICASARGENTINA', 'CANTIDAD_FALLAS_TECNICAS', '.\\QUERY_INPUTS\\v_manto6_formateado.txt', '.\\Descargas\\ARGENTINA', 'sa', 'anaconda1', 'monitordb', '10.54.118.60', '0', NULL, '2021-05-18 13:04:28', '2021-05-18 13:04:34', NULL);
 
 --
 -- Indexes for dumped tables
