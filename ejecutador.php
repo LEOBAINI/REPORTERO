@@ -7,13 +7,8 @@ session_start();
 $codigos_conexion=$_POST['codigos_conexion'];
 $ficheroPlantilla=$_POST['ficheroplantilla'];
 $ficheroAEjecutar=$_POST['ficheroAejecutar'];
+$max_cs_no=$_POST['max_cs_no'];
 
-/*
-echo $codigos_conexion."<br>";
-echo $ficheroPlantilla."<br>";
-echo $ficheroAEjecutar."<br>";
-ECHO $_SESSION["sql_user"]."<br>";
-*/
 
   $nombre=$_POST['nombre'];
   $descripcionreporte=$_POST['descripcionreporte'];
@@ -28,7 +23,13 @@ ECHO $_SESSION["sql_user"]."<br>";
   $passwordSql=$_SESSION["sql_password"];//$_POST['passwordSql'];
   $basedata='monitordb';//$_POST['basedata'];
   $ip=$_SESSION["sql_server_ip"];//$_POST['ip'];
- 
+
+   $fecha = new DateTime();
+   $timestamp= $fecha->getTimestamp();
+   $nombre=$nombre.'_'.$timestamp;
+   $rutaAlQuery=$rutaAlQuery.'_'.$timestamp.'.txt';
+   $ficheroAEjecutar=$ficheroAEjecutar.'_'.$timestamp.'.txt';
+
 encolarReporte($nombre,
   $descripcionreporte,
   $rutaAlQuery,
@@ -41,7 +42,7 @@ encolarReporte($nombre,
 //Leemos la plantilla para luego reemplazar codigos de conexion
 $Fichero= leer_fichero_completo($ficheroPlantilla);
 //toma los codigos de conexión y los pone separados por coma y coimillas simples para sql
-$CODIGOS_CONEXION_FORMATEADOS=formatearParametros($codigos_conexion);
+$CODIGOS_CONEXION_FORMATEADOS=formatearParametros($codigos_conexion,$max_cs_no);
 //Reemplaza la cadena reservada en el txt por lo codigos de conexion
 $nuevoFichero=str_replace('CODIGOS_CONEXION', $CODIGOS_CONEXION_FORMATEADOS, $Fichero);
 
@@ -63,9 +64,9 @@ function encolarReporte(
   $basedata,
   $ip
   ){
-  $fecha = new DateTime();
   
-  $nombre=$nombre.'_'.$fecha->getTimestamp();
+  
+  
   $query='insert into colareportes(nombre,
   descripcionreporte,
   rutaAlQuery,
@@ -109,7 +110,7 @@ function escribir_fichero($contenido,$rutaFichero){
 
 
 
-function formatearParametros($codigos_conexion){
+function formatearParametros($codigos_conexion,$max_cs_no){
   $parametros_seteados=null;
     $codigos_conexion_ar=explode("\n",$codigos_conexion);
   if(sizeof($codigos_conexion_ar)==1){
@@ -117,9 +118,9 @@ function formatearParametros($codigos_conexion){
     return $parametros_seteados;
   }else{
     
-for ($i = 0; $i < sizeof($codigos_conexion_ar); $i++) {
+for ($i = 0; $i < sizeof($codigos_conexion_ar) && $i < $max_cs_no; $i++) {
   
-      if($i!=sizeof($codigos_conexion_ar)-1){
+      if($i!=sizeof($codigos_conexion_ar)-1 && $i < $max_cs_no-1){
      $parametros_seteados=$parametros_seteados."'".rtrim($codigos_conexion_ar[$i])."',";
     }else{
       $parametros_seteados=$parametros_seteados."'".rtrim($codigos_conexion_ar[$i])."'"; 

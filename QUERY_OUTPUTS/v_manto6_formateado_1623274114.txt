@@ -1,0 +1,3 @@
+select * from v_manto6 where cs_no in (
+'01010002','01010010','01010011'
+);

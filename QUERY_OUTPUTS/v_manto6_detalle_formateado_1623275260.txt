@@ -1,0 +1,3 @@
+select * from v_manto6_detalle where cs_no in (
+'011-002998'
+);

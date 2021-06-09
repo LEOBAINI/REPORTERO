@@ -45,14 +45,20 @@ include "funcionesEspeciales.php";
 	<div class="buscador">
 	<form action="ejecutador.php" method="POST">
     <!--Parametros de encolado en MySql local-->
+    <?php
+    $fecha = new DateTime();  
+  	$nombre='v_manto6_formateado_'.$fecha->getTimestamp().'.txt';
+    ?>
 	<input type="hidden" name="ficheroplantilla" value=".\QUERY_INPUTS\v_manto6.txt" />
-    <input type="hidden" name="ficheroAejecutar" value=".\QUERY_INPUTS\v_manto6_formateado.txt" />	
+    <input type="hidden" name="ficheroAejecutar" value=".\QUERY_OUTPUTS\v_manto6_formateado" />	
     <?php
     echo '<input type="hidden" name="nombre" value="F_TECNICAS_'.$_SESSION['pais'].'"/>' 	
     ?>
     <input type="hidden" name="descripcionreporte" value="CANTIDAD_FALLAS_TECNICAS" />	
-    <input type="hidden" name="rutaAlQuery" value=".\\QUERY_INPUTS\\v_manto6_formateado.txt" />	
+    <input type="hidden" name="rutaAlQuery" value=".\\QUERY_OUTPUTS\\v_manto6_formateado" />	
+    <input type="hidden" name=" max_cs_no" value="5000" />	
    
+  
     <!--Parametros de encolado en MySql local-->
 
 
@@ -61,6 +67,8 @@ include "funcionesEspeciales.php";
 	<label for="codigos_conexion">Ingrese aquí los códigos de conexión uno debajo del otro (Max 5000)</label>	
 
 	<textarea name="codigos_conexion" rows="8" cols="90" required="required"></textarea>
+	<!-- tAMAÑO MÁXIMO ES CANT CTOS * 8 (LARGO)+ CANT CTOS-->
+	<br>
 	<!--<input type="button" value="Solicitar Reporte" onclick="location.href = 'ejecutador.php'">-->
 	<input type="submit" name="Crear Reporte" value="Crear Reporte">
 	</form>

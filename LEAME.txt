@@ -1,0 +1,5 @@
+REQUISITOS
+USER PASS DE MYSQL admin admin
+INSTALAR 7ZIP y agregar a la variable de entorno de windows.
+Instalar Java
+Instalar PHP con MySql, Xampp de preferencia

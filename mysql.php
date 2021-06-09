@@ -6,9 +6,9 @@
 
 private $dbhost = '127.0.0.1';
 
-private $dbuser = 'root';
+private $dbuser = 'admin';
 
-private $dbpass = 'root';
+private $dbpass = 'admin';
 
 private $dbname = 'reportero';
 

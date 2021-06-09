@@ -45,14 +45,15 @@ include "funcionesEspeciales.php";
 	<form action="ejecutador.php" method="POST">
 	 <!--Parametros de encolado en MySql local-->
 	<input type="hidden" name="ficheroplantilla" value=".\QUERY_INPUTS\v_manto6_detalle.txt" />
-    <input type="hidden" name="ficheroAejecutar" value=".\QUERY_INPUTS\v_manto6_detalle_formateado.txt" />	
+    <input type="hidden" name="ficheroAejecutar" value=".\QUERY_OUTPUTS\v_manto6_detalle_formateado" />	
     <?php
     echo '<input type="hidden" name="nombre" value="F_TECNICAS_DETALLE_'.$_SESSION['pais'].'"/>' 
 
     ?>
     
     <input type="hidden" name="descripcionreporte" value="DETALLE_DE_CANTIDAD_FALLAS_TECNICAS" />	
-    <input type="hidden" name="rutaAlQuery" value=".\\QUERY_INPUTS\\v_manto6_detalle_formateado.txt" />	
+    <input type="hidden" name="rutaAlQuery" value=".\\QUERY_OUTPUTS\\v_manto6_detalle_formateado" />	
+    <input type="hidden" name=" max_cs_no" value="100" />	
    
 
     <!--Parametros de encolado en MySql local-->
@@ -67,7 +68,6 @@ include "funcionesEspeciales.php";
 	</div>
 	
 
-	
 	
 	<div class="reportesAdescargar" id="idreportesAdescargar">
 		<h3>LISTANDO REPORTES GENERADOS...</h3>
@@ -102,7 +102,7 @@ include "funcionesEspeciales.php";
 	setInterval(
 	function(){
 	$('#idreportesAdescargar').load('descargas.php');
-	},2000
+	},500
 	);
 	});
 	</script>
