@@ -1,4 +1,14 @@
-# REPORTERO ![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/IMG_login.JPG)
+# REPORTERO 
+Página de inicio
+![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/IMG_login.JPG)
+Página principal
+![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/principal.JPG)
+Obtener query con detalles de incidentes
+![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/detalle.JPG)
+Ejemplo de descarga de datos
+![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/datos_preview.JPG)
+Log de queries ejecutadas
+![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/query_historicas.JPG)
 Aplicativo web que permite emitir reportes mediante archivos.sql con queries precargadas.
 
 El sistema toma como paramétros de ingreso los códigos de conexión, vía php se ingresan los reportes solicitados en MySql, al finalizar la carga, se ejecuta un proceso
