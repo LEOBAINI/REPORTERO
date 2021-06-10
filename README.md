@@ -18,7 +18,7 @@ dandoindicios de la falla en caso de haber alguna.
 
 /*Instalación*/
 Para ser instalado, requiere.
-Tener instalado MySql, crear el user admin/admin
+Tener instalado MySql, crear el user admin/admin, luego importar la estructura de la base usando https://github.com/LEOBAINI/REPORTERO/tree/master/EstructuraMySql
 Instalar SqlCmd
 Instalar 7Zip
 Descargar el repositorio completo, y colocarlo en la carpeta pública httdocs de php.
