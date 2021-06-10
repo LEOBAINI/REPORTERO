@@ -1,4 +1,4 @@
-# REPORTERO https://github.com/LEOBAINI/REPORTERO/blob/master/images/logoProse.ico
+# REPORTERO https://raw.githubusercontent.com/LEOBAINI/REPORTERO/master/images/logoProse.ico?token=ACX67FHEX4OUYVVDFTYDS23AYGHVY
 Aplicativo web que permite emitir reportes mediante archivos.sql con queries precargadas.
 
 El sistema toma como paramétros de ingreso los códigos de conexión, vía php se ingresan los reportes solicitados en MySql, al finalizar la carga, se ejecuta un proceso
