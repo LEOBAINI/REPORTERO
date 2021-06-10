@@ -1,4 +1,4 @@
-# REPORTERO 
+# REPORTERO WEB // JAVA BACKEND + SQLCMD + MYSQL + SQL SERVER + PHP + CSS + HTML
 Página de inicio
 ![Login](https://github.com/LEOBAINI/REPORTERO/blob/master/images/IMG_login.JPG)
 Página principal
