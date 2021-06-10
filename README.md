@@ -8,9 +8,13 @@ como auditoria.
 Luego con cada ejecución se llama al comando robocopy que borra los reportes zipeados cada 7 días, y una task programada en MySql limpia los registros mas antiguos de 30 días.
 
 El sistema no requiere mantenimiento de ningún tipo, solo debe estar en ejecución php y MySql.
+Cada pais tiene su propia carpeta de descargas, y muchos usuarios usan la misma carpeta de cada pais, no es una carpeta por usuario.
+Si usuario a,b y c entran a Colombia por ejemplo, todos verán los reportes ejecutados por otros usuarios del mismo pais.
 
 Si llegase a fallar en algún momento, se puede ejecutar de forma manual en el servidor, el archivo start.bat, que ejecutará manualmente MASTERQUERY.jar viendo lo que ocurre por consola
 dandoindicios de la falla en caso de haber alguna.
+
+
 
 /*Instalación*/
 Para ser instalado, requiere.
